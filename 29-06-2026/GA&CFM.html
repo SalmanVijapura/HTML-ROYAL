@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h3><center>💻 Git Architecture & Command Flow Matrix</center></h3>
+
+<table border="1" align="center"  cellpadding="1" cellspacing="1" widht="100%" bordercolor="red">
+    <thead bgcolor="red">
+       <th>Git Command </th>
+       <th>Source Area</th>
+       <th>Target Area</th>
+       <th>Staging State</th>
+       <th>Remote Sync</th>
+       <th>Conflict Risk</th>
+    </thead>
+    <tbody>
+        <tr>
+        <td bgcolor="lightpink">git add.</td>
+        <td bgcolor="lightpink">Working Directory</td>
+        <td bgcolor="lightpink">Staging Area</td>
+        <td bgcolor="lightgreen"><font color="green">Modified->Staged</font></td>
+        <td bgcolor="lightpink">No effect</td>
+        <td bgcolor="lightpink">None</td>
+        </tr>
+
+<tr>
+        <td>git commit -m</td>
+        <td>Staging Area</td>
+        <td>Local Repository</td>
+        <td bgcolor="lightblue"><font color="blue">Coomited</font></td>
+        <td>No effect</td>
+        <td>None</td>
+        </tr>
+
+
+<tr>
+        <td bgcolor="lightpink">git Push origin</td>
+        <td bgcolor="lightpink">Local Repository</td>
+        <td bgcolor="lightpink">Remote Repository</td>
+        <td bgcolor="lightpink">Unchanged</td>
+        <td bgcolor="lightgreen"><font color="green">Uploaded</font></td>
+        <td bgcolor="lightpink">Low(If Up-to-date)</td>
+        </tr>
+
+<tr>
+        <td>git pull origin</td>
+        <td>Remote Repository</td>
+        <td>Working Directory</td>
+        <td>Auto-Marge Attempt</td>
+        <td bgcolor="lightblue"><font color="blue">Downloded</font></td>
+        <td bgcolor="lightpink"><font color="red">HIGH RISK</font></td>
+        </tr>
+
+<tr>
+        <td bgcolor="lightpink">git stash pop</td>
+        <td bgcolor="lightpink">Stash Memory</td>
+        <td bgcolor="lightpink">Working Directory</td>
+        <td bgcolor="lightpink">Restored Progress</td>
+        <td bgcolor="lightpink">No Effect</font></td>
+        <td bgcolor="lightpink"><font color="red">MEDIUM RISK</font></td>
+        </tr>
+
+
+
+
+
+
+
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

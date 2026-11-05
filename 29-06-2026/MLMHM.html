@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+<h2><center><font color="teal">🧠 Machine Learning Model Hyperparameter Matrix</font></center></h2>
+
+<table cellpadding="1" cellspacing="0" border="1" align="center" width="100%" bordercolor="teal">
+    <thead bgcolor="teal">
+        <th><font color="white">Algorithm Model</font></th>
+        <th><font color="white">Core Parameter</font></th>
+        <th><font color="white">Default Value</font></th>
+        <th><font color="white">Loss Function Src</font></th>
+        <th><font color="white">Optimization Metric</font></th>
+        <th><font color="white">Overfitting Risk</font></th>
+    </thead>
+<tr>
+<td bgcolor="#0d9488">Random Forest</td>
+<td bgcolor="#0d9488">n_estimators</td>
+<td bgcolor="#0d9488">100 Trees</td>
+<td bgcolor="#0d9488">Gini/Entropy</td>
+<td bgcolor="#0d9488">Out-Of-Bag Error</td>
+<td bgcolor="#0d9488"><font color="green">Low Risk</font></td>
+</tr>
+
+<tr>
+<td>XGBoost Regressor</td>
+<td>learning_rate</td>
+<td>0.3 Max</td>
+<td>MSE/MAE</td>
+<td>Gradient Descent</td>
+<td><font color="orange">Medium Risk</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#0d9488">Suppot Vector(SVM)</td>
+<td bgcolor="#0d9488">C Parameter</td>
+<td bgcolor="#0d9488">1.0 Float</td>
+<td bgcolor="#0d9488">Hinge Loss Matrix</td>
+<td bgcolor="#0d9488">Lagrangian Multiplier</td>
+<td bgcolor="#0d9488"><font color="orange">Medium Risk</font></td>
+</tr>
+
+<tr>
+<td>Deep Neural Net(DNN)</td>
+<td>batch_size</td>
+<td>32 Integer</td>
+<td>Cross-Entropy</td>
+<td>Adam / SGD Optimizer</td>
+<td><font color="red">Very High Risk</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#0d9488">K-Means Clustering</td>
+<td bgcolor="#0d9488">n_cluster(K)</td>
+<td bgcolor="#0d9488">8 Cluster</td>
+<td bgcolor="#0d9488">Intertia WCSS</td>
+<td bgcolor="#0d9488">Euclidean Distance</td>
+<td bgcolor="#0d9488"><font color="green">Low Risk</font></td>
+</tr>
+</table>
+
+
+
+    </body>
+</html>

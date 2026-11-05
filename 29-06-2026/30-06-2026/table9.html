@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<center><font color="darkblue" size="4">Enterprise Firewall Rule Enforcement Matrix</font></center><br>
+<table cellpadding="1" cellspacing="0" width="100%" border="1" bordercolor="darkblue">
+    <thead>
+        <tr bgcolor="08122f">
+        <th rowspan="2"><font color="white">Rule ID</font></th>
+        <th rowspan="2"><font color="white">Protocol</font></th>
+        <th colspan="2"><font color="white">Source Address Configuration</font></th>
+        <th colspan="2"><font color="white">Destination Endpoint</font></th>
+        <th rowspan="2"><font color="white">Action Policy</font></th>
+        </tr>
+
+<tr bgcolor="#31363f">
+<th><font color="white">IP Range</font></th>
+<th><font color="white">Subnet Mask</font></th>
+<th><font color="white">Target Interface</font></th>
+<th><font color="white">Port Target</font></th>
+</tr>       
+        
+    </thead>
+    <tbody>
+
+<tr>
+<td>FW-001</td>
+<td bgcolor="lightpink" align="center">TCP</td>
+<td>192.162.1.0/24</td>
+<td>255.255.255.0</td>
+<td>DMZ Server 1</td>
+<td>80,443</td>
+<td bgcolor="" align="center">ACCEPT</td>
+</tr>
+
+<tr>
+<td rowspan="2">FW-002</td>
+<td bgcolor="lightblue" align="center" rowspan="2">UDP</td>
+<td rowspan="2">10.0.0.5</td>
+<td rowspan="2">255.0.0.0</td>
+<td>Internal DB Node</td>
+<td>3306(SQL)</td>
+<td bgcolor="" align="center" rowspan="2">DROP/BLOCK</td>
+</tr>
+
+<tr>
+<td>Backup Cloud storage</td>
+<td>9200</td>        
+</tr>
+
+
+
+
+
+
+
+
+    </tbody>
+</table>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeloCar Motors | About Us</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Arial, sans-serif; line-height:1.6; color:#222; background:#f7f7f7; }
+
+  header {
+    background:#111; color:#fff; padding:20px 40px;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  header h1 { color:#e63946; font-size:1.6rem; }
+  nav a { color:#fff; text-decoration:none; margin-left:20px; }
+  nav a:hover { color:#e63946; }
+
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200') center/cover;
+    color:#fff; text-align:center; padding:100px 20px;
+  }
+  .hero h2 { font-size:2.4rem; }
+  .hero p { margin-top:10px; opacity:0.9; }
+
+  section { max-width:950px; margin:0 auto; padding:60px 20px; }
+  section h2 { border-bottom:3px solid #e63946; display:inline-block; margin-bottom:20px; }
+
+  .history p { margin-bottom:15px; }
+
+  .values { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+  .value-card { background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+  .value-card h3 { color:#e63946; margin-bottom:8px; }
+
+  .team { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; text-align:center; }
+  .team-card { background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+  .team-card img { width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:10px; }
+  .team-card h4 { color:#111; }
+  .team-card p { font-size:0.9rem; color:#666; }
+
+  .stats { display:flex; justify-content:space-around; text-align:center; flex-wrap:wrap; background:#111; color:#fff; padding:40px 20px; }
+  .stats div h3 { font-size:2rem; color:#e63946; }
+  .stats div p { font-size:0.9rem; margin-top:5px; }
+
+  .locations table { width:100%; border-collapse:collapse; margin-top:15px; }
+  .locations th, .locations td { padding:10px; border:1px solid #ddd; text-align:left; }
+  .locations th { background:#eee; }
+
+  footer { text-align:center; padding:20px; background:#111; color:#ccc; }
+  footer a { color:#e63946; }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>VeloCar Motors</h1>
+    <nav>
+      <a href="#history">Our Story</a>
+      <a href="#values">Values</a>
+      <a href="#team">Team</a>
+      <a href="#locations">Locations</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Driving Innovation Since 2005</h2>
+    <p>Building vehicles people trust, for over two decades.</p>
+  </div>
+
+  <section id="history" class="history">
+    <h2>Our Story</h2>
+    <p>VeloCar Motors was founded in 2005 with a simple goal: build reliable, affordable vehicles without compromising on design or safety. What started as a small workshop with 12 employees has grown into a company serving customers across the country.</p>
+    <p>Today, we design, manufacture, and service vehicles across three factories, backed by a team of engineers, designers, and support staff dedicated to quality at every step.</p>
+  </section>
+
+  <section id="values">
+    <h2>Our Values</h2>
+    <div class="values">
+      <div class="value-card">
+        <h3>Reliability</h3>
+        <p>Every vehicle is tested to perform in real-world conditions, mile after mile.</p>
+      </div>
+      <div class="value-card">
+        <h3>Innovation</h3>
+        <p>We invest heavily in R&D to bring smarter, more efficient vehicles to market.</p>
+      </div>
+      <div class="value-card">
+        <h3>Sustainability</h3>
+        <p>Our hybrid and electric lineup reflects our commitment to a cleaner future.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div><h3>20+</h3><p>Years in Business</p></div>
+    <div><h3>3</h3><p>Manufacturing Plants</p></div>
+    <div><h3>150K+</h3><p>Vehicles Sold</p></div>
+    <div><h3>4,000+</h3><p>Employees</p></div>
+  </div>
+
+  <section id="team">
+    <h2>Leadership Team</h2>
+    <div class="team">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="CEO">
+        <h4>Michael Grant</h4>
+        <p>Chief Executive Officer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="CTO">
+        <h4>Sarah Lin</h4>
+        <p>Chief Technology Officer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="COO">
+        <h4>David Osei</h4>
+        <p>Chief Operating Officer</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="locations" class="locations">
+    <h2>Our Locations</h2>
+    <table>
+      <thead>
+        <tr><th>Facility</th><th>City</th><th>Type</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Headquarters</td><td>Detroit, MI</td><td>Corporate Office</td></tr>
+        <tr><td>Plant 1</td><td>Austin, TX</td><td>Manufacturing</td></tr>
+        <tr><td>Plant 2</td><td>Columbus, OH</td><td>Manufacturing</td></tr>
+        <tr><td>Service Hub</td><td>Denver, CO</td><td>Customer Service</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 VeloCar Motors. All rights reserved.</p>
+    <p><a href="#history">Back to top</a></p>
+  </footer>
+
+</body>
+</html>

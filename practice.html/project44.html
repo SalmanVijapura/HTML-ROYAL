@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>documenty</title>
+</head>
+
+<body>
+
+<h1 align="center">
+    International Space Agency - Orbital Mission Control Platform
+</h1>
+
+<table border="2" cellpadding="8" cellspacing="2" width="98%" align="center">
+
+    
+    <tr bgcolor="#cbd5e1">
+        <th rowspan="5" width="10%">
+            Space Agency<br>(Agency)
+        </th>
+
+        <th rowspan="5" width="8%">
+            Rocket<br>Variant<br>(Vehicle)
+        </th>
+
+        <th rowspan="5" width="8%">
+            Payload ID
+        </th>
+
+        <th colspan="5">
+            Mission Telemetry & Orbital Status
+            (Telemetry Matrix)
+        </th>
+
+        </th>
+    </tr>
+
+    <tr bgcolor="#d5dee9">
+        <th colspan="3">
+            Trajectory Data
+        </th>
+        
+        <th rowspan="3" width="8%" bgcolor="#b9e6fa">
+            Live System<br>
+            Control<br>
+            (Form Inputs)
+        </th>
+
+        <th rowspan="3" width="16%" bgcolor="#e4cdf7">
+            Nested Orbital Sub-System<br>
+            (Sub-Table Matrix)
+
+        
+    </tr>
+
+    <tr bgcolor="#72c7eb">
+        <th colspan="2">
+            Orbital Parameters
+        </th>
+
+        <th rowspan="2">
+            Velocity
+        </th>
+
+    
+
+    </tr>
+
+    <tr bgcolor="#79c9ed">
+        <th>
+            Apogee (km)
+        </th>
+
+        <th>
+            Perigee (km)
+        </th>
+
+    
+    </tr>
+
+    <tr bgcolor="#8cbaf0">
+        <th>
+            Max
+        </th>
+
+        <th>
+            Min
+        </th>
+
+        <th>
+            km/s
+        </th>
+
+        <th>
+            override switch
+        </th>
+        
+        <th rowspan="1">
+            Module Status
+        </th>
+    </tr>
+
+
+    
+    <tr>
+
+        <td rowspan="4" align="center" bgcolor="#dff2ff">
+            <b>NASA</b>
+            <br><br>
+            Artemis Program
+        </td>
+
+        <td rowspan="2" align="center">
+            <b>SLS Block 1</b>
+        </td>
+
+        <td align="center">
+            <font color="#8b4b32">
+                <b>ORION-01</b>
+            </font>
+        </td>
+
+        <td align="right">
+            408,000
+        </td>
+
+        <td align="right">
+            360,000
+        </td>
+
+        <td align="right">
+            11.2
+        </td>
+
+        <td rowspan="4" align="center" bgcolor="#dff7ff">
+
+            Mission Mode:<br>
+
+            <select>
+                <option>Lunar Orbit</option>
+                
+            </select>
+
+            <br><br>
+
+            <input type="checkbox" checked>
+            Auto Align
+
+            <br><br>
+
+            <input type="radio" name="power" checked>
+            Solar
+
+            <input type="radio" name="power">
+            Nuclear
+
+            <br><br>
+
+            <button>Initiate Deploy</button>
+
+        </td>
+
+
+        
+        <td rowspan="4" bgcolor="#ead7fa">
+
+            <table border="1" width="100%" cellpadding="5">
+
+                <tr bgcolor="#d9b8f5">
+                    <th colspan="2">
+                        Orion Capsule Health
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>Reserve:</td>
+                    <td>
+                       <input type="range">
+                    </td>
+                </tr>
+
+                <tr bgcolor="#f5c9d0">
+                    <td>Shield Temp:</td>
+                    <td align="center">
+                        <b>2,760°C</b>
+                    </td>
+                </tr>
+
+                <tr bgcolor="#e6d2f5">
+                    <th>Thruster</th>
+                    <th>Fuel</th>
+                </tr>
+
+                <tr>
+                    <td>RCS-01</td>
+                    <td>98%</td>
+                </tr>
+
+                <tr>
+                    <td>RCS-02</td>
+                    <td>95%</td>
+                </tr>
+
+            </table>
+
+        </td>
+
+    </tr>
+
+
+    
+    <tr>
+
+        <td align="center">
+            <font color="#8b4b32">
+                <b>GATEWAY-M1</b>
+            </font>
+        </td>
+
+        <td align="right">
+            70,000
+        </td>
+
+        <td align="right">
+            3,000
+        </td>
+
+        <td align="right">
+            1.68
+        </td>
+
+    </tr>
+
+
+    
+    <tr>
+
+        <td rowspan="2" align="center">
+            <b>Falcon Heavy</b>
+        </td>
+
+        <td align="center">
+            <font color="#8b4b32">
+                <b>PPE-HALO</b>
+            </font>
+        </td>
+
+        <td align="right">
+            85,000
+        </td>
+
+        <td align="right">
+            4,500
+        </td>
+
+        <td align="right">
+            2.10
+        </td>
+
+    </tr>
+
+
+
+    <tr>
+
+        <td align="center">
+            <font color="#8b4b32">
+                <b>VIPER-ROV</b>
+            </font>
+        </td>
+
+        <td align="right">
+            384,000
+        </td>
+
+        <td align="right">
+            200
+        </td>
+
+        <td align="right">
+            1.02
+        </td>
+
+    </tr>
+
+
+    
+    <tr bgcolor="#dcd0fa">
+
+        <td colspan="3" align="center">
+            <b>US Orbital Sector Subtotal</b>
+        </td>
+
+        <td colspan="2" align="center">
+            <b>Avg Apogee: 236,750 km</b>
+        </td>
+
+        <td align="center">
+            <b>Max V: 11.2<br>km/s</b>
+        </td>
+
+        <td align="center" colspan="2">
+            <b>Sub-System Status:<br>
+            Operational (4/4)</b>
+        </td>
+
+    </tr>
+
+
+
+    <tr>
+
+        <td rowspan="3" align="center" bgcolor="#ffedcc">
+            <b>ISRO</b>
+            <br><br>
+            Deep Space
+        </td>
+
+        <td rowspan="2" align="center" bgcolor="#fff0bd">
+            <b>LVM3-M4</b>
+        </td>
+
+        <td align="center">
+            <font color="#8b4b32">
+                <b>CH3-LANDER</b>
+            </font>
+        </td>
+
+        <td align="right">
+            153,000
+        </td>
+
+        <td align="right">
+            163
+        </td>
+
+        <td align="right">
+            10.8
+        </td>
+
+        <td rowspan="3" bgcolor="#fffbea">
+
+            Telemetry Logs:<br>
+
+            <textarea rows="4" cols="15">Lander: OK
+            Rover:
+            Parked <input type="number"></textarea>
+
+        </td>
+
+        <td rowspan="3" bgcolor="#fff8c9">
+
+            <table border="1" width="100%" cellpadding="5">
+
+                <tr bgcolor="#ffe09a">
+                    <th colspan="2">
+                        Chandrayaan Module Audit
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>Pragyan Rover:</td>
+                    <td bgcolor="#d6f5dd">
+                        Sleep Mode
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Payload Sensors:</td>
+                    <td bgcolor="#d6f5dd">
+                        Active
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+
+    </tr>
+
+
+    
+    <tr>
+
+        <td align="center">
+            <font color="#8b4b32">
+                <b>PROP-MOD</b>
+            </font>
+        </td>
+
+        <td align="right">
+            100,000
+        </td>
+
+        <td align="right">
+            150
+        </td>
+
+        <td align="right">
+            2.30
+        </td>
+
+    </tr>
+
+
+    
+    <tr>
+
+        <td align="center" bgcolor="#fff0bd">
+            <b>PSLV-C57</b>
+        </td>
+
+        <td align="center">
+            <font color="#8b4b32">
+                <b>ADITYA-L1</b>
+            </font>
+        </td>
+
+        <td align="right">
+            1,500,000
+        </td>
+
+        <td align="right">
+            280,000
+        </td>
+
+        <td align="right">
+            1.45
+        </td>
+
+    </tr>
+
+
+    
+    <tr bgcolor="#d6e0ec">
+
+        <td colspan="3" align="center">
+            <b>Global Orbital Aggregate (Grand Totals)</b>
+        </td>
+
+        <td align="right">
+            <font color="#16729b">
+                <b>1,500,000 km</b>
+            </font>
+        </td>
+
+        <td align="right">
+            <font color="#16729b">
+                <b>163 km</b>
+            </font>
+        </td>
+
+        <td align="center">
+            <font color="#9b4a24">
+                <b>Max: 11.2<br>km/s</b>
+            </font>
+        </td>
+
+        <td align="center" bgcolor="#f7cbd1">
+            <font color="#9c3048">
+                <b>ALERT:<br>NONE</b>
+            </font>
+        </td>
+
+        <td align="center" bgcolor="#d8f5df">
+            <font color="#218044">
+                <b>SYSTEMS: 100% NOMINAL</b>
+            </font>
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>

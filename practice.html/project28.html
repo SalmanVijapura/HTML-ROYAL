@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital University Campus & Portal</title>
+
+</head>
+<body>
+
+<header>
+  <div class="logo-title">
+    <div class="logo-box">▲</div>
+    <div class="title-block">
+      <h1>METROPOLITAN TECHNICAL UNIVERSITY</h1>
+      <p>Official Academic Administration &amp; Student Matrix Portal</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="year">Academic Year: 2026</span>
+    <span class="status">PORTAL ONLINE</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#overview">Campus Overview</a>
+  <a href="#matrix">Department Matrix</a>
+  <a href="#registration">Student Registration</a>
+  <a href="#resources">Learning Resources</a>
+</nav>
+
+<main>
+
+  <!-- SECTION 1 -->
+  <section id="overview">
+    <h2>1. Campus Announcements &amp; Live Feed</h2>
+
+    <details open>
+      <summary>Important Vice-Chancellor Notice (Click to Collapse)</summary>
+      <p>The final examination matrix has been updated. All engineering and technology students must verify their internal credits before the locking date.</p>
+    </details>
+
+    <div class="feed-grid">
+      <div class="feed-col">
+        <h3>Current Semester Progress</h3>
+        <progress value="70" max="100"></progress>
+        <p>Days remaining until exams: 25</p>
+      </div>
+      <div class="feed-col">
+        <h3>Digital Library Orientation Audio</h3>
+        <audio controls>
+          <source src="library-orientation.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="feed-col">
+        <h3>Virtual Campus Tour Video</h3>
+        <video controls poster="campus-thumbnail.jpg">
+          <source src="campus-tour.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section id="matrix">
+    <h2>2. Engineering &amp; IT Department Structure</h2>
+    <p>Below is the multi-level table structure showing active intake capacities.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Department ID</th>
+          <th rowspan="2">Course Specialization</th>
+          <th colspan="2">Intake Slots</th>
+          <th colspan="2">Faculty Count</th>
+          <th rowspan="2">Status</th>
+        </tr>
+        <tr>
+          <th>Regular</th>
+          <th>Lateral Entry</th>
+          <th>Professor</th>
+          <th>Assistant</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>BTECH-IT</strong></td>
+          <td>Information Technology</td>
+          <td>60</td>
+          <td>12</td>
+          <td>4</td>
+          <td>8</td>
+          <td class="full">FULL</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>BTECH-CS</strong></td>
+          <td rowspan="2">Computer Science Engineering</td>
+          <td>120</td>
+          <td>24</td>
+          <td>6</td>
+          <td>12</td>
+          <td class="partial">4 SEATS LEFT</td>
+        </tr>
+        <tr class="alert-row">
+          <td colspan="5"><strong>Lab Alert:</strong> Advanced AI-ML Lab setup is undergoing system upgrades on Server Block B.</td>
+        </tr>
+        <tr>
+          <td><strong>BTECH-EC</strong></td>
+          <td>Electronics &amp; Comm. Engineering</td>
+          <td>60</td>
+          <td>12</td>
+          <td>3</td>
+          <td>6</td>
+          <td class="closed">CLOSED</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section id="registration">
+    <h2>3. Student Admission Enrollment Console</h2>
+
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div class="form-row">
+          <label for="fullname">Full Name of Applicant:</label>
+          <div class="field"><input type="text" id="fullname" placeholder="Firstname Middlename Lastname" required></div>
+        </div>
+        <div class="form-row">
+          <label for="email">Email Address:</label>
+          <div class="field"><input type="email" id="email" placeholder="name@example.com" required></div>
+        </div>
+        <div class="form-row">
+          <label>Gender Selection:</label>
+          <div class="field">
+            <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other"> <label for="other">Other</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Academic Choices &amp; Uploads</legend>
+        <div class="form-row">
+          <label for="dob">Date of Birth:</label>
+          <div class="field"><input type="date" id="dob"></div>
+        </div>
+        <div class="form-row">
+          <label for="batchtime">Reporting Batch Time:</label>
+          <div class="field"><input type="time" id="batchtime"></div>
+        </div>
+        <div class="form-row">
+          <label for="jee">JEE Merit Score percentile:</label>
+          <div class="field"><input type="number" id="jee" min="0" max="100" step="0.01"></div>
+        </div>
+        <div class="form-row">
+          <label for="fee">Fee Budget Comfort Index:</label>
+          <div class="field"><input type="range" id="fee" min="0" max="100" value="50"></div>
+        </div>
+        <div class="form-row">
+          <label for="branch">Preferred Core Branch:</label>
+          <div class="field">
+            <select id="branch">
+              <option>Data Science &amp; AI</option>
+              <option>Computer Science Engineering</option>
+              <option>Information Technology</option>
+              <option>Electronics &amp; Communication</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="marksheet">Upload 12th Marksheet (.pdf):</label>
+          <div class="field"><input type="file" id="marksheet" accept=".pdf"></div>
+        </div>
+        <div class="form-row">
+          <label for="theme">Identity Theme Color:</label>
+          <div class="field"><input type="color" id="theme" value="#2b5fa8"></div>
+        </div>
+        <div class="form-row">
+          <label for="campuscode">Search Campus Code:</label>
+          <div class="field"><input type="text" id="campuscode" placeholder="City Code..."></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Declaration &amp; Registry</legend>
+        <div class="form-row">
+          <label for="interests">Briefly write your technical interests and background:</label>
+          <div class="field"><textarea id="interests" rows="4" placeholder="Type your programming language experience here..."></textarea></div>
+        </div>
+        <div class="form-row">
+          <label for="accept">
+            <input type="checkbox" id="accept" required>
+            I accept all rules, regulations, and credit-hour policies of the university.
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="hostel">Select Preferred Hostel Block:</label>
+          <div class="field"><input type="text" id="hostel"></div>
+        </div>
+      </fieldset>
+
+      <div class="btn-row">
+        <button type="reset">Reset Form Data</button>
+        <button type="submit" class="primary">Submit Registration</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section id="resources">
+    <h2>4. Interactive Regional Campus Locator Map</h2>
+    <p>Click on specific sections of the layout to route your request to regional database terminals.</p>
+
+    <div class="map-wrap">
+      <img src="campus-blueprint.jpg" alt="University Blueprint Grid" usemap="#campusmap" width="500" height="300">
+      <map name="campusmap">
+        <area shape="rect" coords="0,0,166,150" href="#" alt="North Block" title="North Block">
+        <area shape="rect" coords="166,0,333,150" href="#" alt="Central Block" title="Central Block">
+        <area shape="rect" coords="333,0,500,150" href="#" alt="South Block" title="South Block">
+        <area shape="rect" coords="0,150,500,300" href="#" alt="Hostel & Sports Zone" title="Hostel & Sports Zone">
+      </map>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-left">
+    <h4>Important Links:</h4>
+    <ul>
+      <li><a href="#">AICTE Guidelines Matrix</a></li>
+      <li><a href="#">University Syllabus Directory</a></li>
+      <li><a href="#">Pure HTML Implementation Guide</a></li>
+    </ul>
+  </div>
+  <div class="footer-center">
+    <p>© 2026 Metropolitan University System.</p>
+    <p>Engine Architecture: Pure HTML Core Layout</p>
+  </div>
+  <div class="footer-right">
+    <p>Administrative Block, Sector 2,<br>
+    University Campus Road,<br>
+    Himatnagar, Gujarat, India.<br>
+    <a href="mailto:support@university.edu">support@university.edu</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

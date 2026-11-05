@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Cafe</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:#f8f4ef;
+        color:#333;
+    }
+
+    header{
+        background:#4e342e;
+        color:white;
+        padding:20px;
+        text-align:center;
+    }
+
+    nav{
+        background:#6d4c41;
+        padding:15px;
+        text-align:center;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin:15px;
+        font-size:18px;
+    }
+
+    .hero{
+        background:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+        background-size:cover;
+        background-position:center;
+        height:500px;
+        color:white;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:60px;
+    }
+
+    .hero p{
+        font-size:24px;
+        margin-top:15px;
+    }
+
+    section{
+        padding:60px 10%;
+    }
+
+    h2{
+        text-align:center;
+        margin-bottom:30px;
+        color:#4e342e;
+    }
+
+    .about p{
+        text-align:center;
+        line-height:30px;
+        font-size:18px;
+    }
+
+    .menu{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:25px;
+    }
+
+    .card{
+        background:white;
+        padding:25px;
+        border-radius:15px;
+        text-align:center;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3{
+        margin-bottom:10px;
+        color:#6d4c41;
+    }
+
+    .gallery{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+    }
+
+    .gallery img{
+        width:100%;
+        border-radius:15px;
+    }
+
+    .reviews{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        gap:20px;
+    }
+
+    .review-box{
+        background:white;
+        padding:20px;
+        border-radius:15px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact{
+        text-align:center;
+    }
+
+    footer{
+        background:#4e342e;
+        color:white;
+        text-align:center;
+        padding:25px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Royal Cafe</h1>
+    <p>Fresh Coffee & Delicious Food</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Menu</a>
+    <a href="#">Gallery</a>
+    <a href="#">Reviews</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to Royal Cafe</h1>
+    <p>Enjoy Every Sip & Every Bite</p>
+</div>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        Royal Cafe is the perfect place for coffee lovers and food enthusiasts.
+        We serve freshly brewed coffee, delicious snacks, pizzas, burgers,
+        sandwiches, and desserts in a comfortable atmosphere.
+        Come with friends and family and create memorable moments.
+    </p>
+</section>
+
+<section>
+    <h2>Our Menu</h2>
+
+    <div class="menu">
+
+        <div class="card">
+            <h3>Cappuccino</h3>
+            <p>₹120</p>
+        </div>
+
+        <div class="card">
+            <h3>Cold Coffee</h3>
+            <p>₹150</p>
+        </div>
+
+        <div class="card">
+            <h3>Veg Burger</h3>
+            <p>₹130</p>
+        </div>
+
+        <div class="card">
+            <h3>Pizza</h3>
+            <p>₹250</p>
+        </div>
+
+        <div class="card">
+            <h3>French Fries</h3>
+            <p>₹100</p>
+        </div>
+
+        <div class="card">
+            <h3>Chocolate Cake</h3>
+            <p>₹180</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814">
+    </div>
+</section>
+
+<section>
+    <h2>Customer Reviews</h2>
+
+    <div class="reviews">
+
+        <div class="review-box">
+            ⭐⭐⭐⭐⭐
+            <p>Best coffee and amazing atmosphere.</p>
+            <h4>- Rahul</h4>
+        </div>
+
+        <div class="review-box">
+            ⭐⭐⭐⭐⭐
+            <p>Delicious food and excellent service.</p>
+            <h4>- Aisha</h4>
+        </div>
+
+        <div class="review-box">
+            ⭐⭐⭐⭐⭐
+            <p>Perfect place to spend time with friends.</p>
+            <h4>- Salman</h4>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Ahmedabad, Gujarat</p>
+    <p>📞 +91 98765 43210</p>
+    <p>📧 royalcafe@gmail.com</p>
+    <br>
+    <button style="padding:15px 30px;background:#6d4c41;color:white;border:none;border-radius:8px;">
+        Book a Table
+    </button>
+</section>
+
+<footer>
+    <p>© 2026 Royal Cafe | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
